@@ -1,0 +1,289 @@
+:root{
+  --white:#fff;
+  --blue:#294c71;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet Ms", Helvetica, sans-serif;
+  background:var(--white) url(../IMG/fundo.png) repeat-x;
+}
+
+header{
+  width:750px;
+  margin: 0 auto;
+  
+
+}
+
+#detalhe-header{
+  height:170px;
+  background: url(../IMG/detalhe-topo.png) no-repeat right top;
+  padding-top:25px;
+}
+ 
+.logo{
+  width: 152px;
+  height: 66px;
+  background: url(../IMG/logo.png) no-repeat center;
+  /*Não é o melhor jeito de se fazer por conta da acessibilidade PESQUISAR*/
+  text-indent: -3000px;
+}
+
+/*nav*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#detalhe-header ul{
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+}
+
+#detalhe-header ul li{
+  /*Ainda não sei se essa é a melhor abordagem*/
+  float: left;
+
+}
+
+#detalhe-header ul a{
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: var(--white);
+  background: url(../IMG/divisor.png) no-repeat left center;
+}
+/*Acredito que dê pra fazer algo como first-child tentei e não consegui PESQUISAR*/
+#detalhe-header ul .primeiro a {
+  background: none;
+}
+
+#detalhe-header ul a:hover{
+  color:#69001d
+}
+
+body#home #nav a.home,body#brasil #nav a.brasil, body#fotos #nav a.fotos{
+  color: var(--white);
+  background: #de003e;
+  cursor: text;
+
+}
+
+main{
+  width: 750px;
+  margin:  auto;
+  margin-top: 60px;
+  background: #f5f5f5;
+  display: flex;
+}
+#conteudo-principal {
+  width: 270px;
+  margin:0 0 20px 195px;
+  
+}
+
+#conteudo-principal-duas-cols{
+  width: 555px;
+  margin:0 0 20px 195px;
+ 
+}
+
+#conteudo-principal-one-col{
+  width: 750px;
+  margin:0 0 20px 0;
+  
+  
+}
+
+
+#conteudo-right{
+  width: 270px;
+  margin: 0 0 20px 15px;
+
+}
+
+#conteudo-left{
+  width: 180px;
+  margin: 0 0 20px -750px;
+  
+}
+
+.box{
+  margin: 10px 5px;
+  padding: 5px;
+  background: #f3f3f3 url(../IMG/fundo-caixa.png);
+}
+
+h2{
+  font-size: 1.1rem;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.box-content{
+  background: #fff;
+  padding: 5px;
+  margin-top:5px;
+}
+
+/*menus*/
+#conteudo-left ul a{
+  font-size: 0.9em;
+  padding:3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+
+}
+
+#conteudo-left ul a:hover{
+  background: #f9f9f9 url(../IMG/marcador.png) no-repeat left center;
+  padding-left: 20px;
+  color:#a1a1a1;
+
+}
+
+/*label*/
+label{
+  display: block;
+  cursor: pointer;
+}
+
+input#email{
+  font-size: 0.9em;
+  background-color: #fff;
+  width: 150px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+input#submit{
+  width: 80px;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+  padding: 5px;
+}
+/*img*/
+/*o correto é ter a imagem do tamanho correto*/
+img.big{
+  width: 100%;
+  border: 2px solid #dfdfdf;
+}
+
+img.small{
+  width: 80px;
+}
+/*cabeçalhos*/
+h3{
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+.destaque h3{
+  background: #b10333;
+  color: #fff;
+}
+
+.entrevista h3{
+  background:#de003e;
+
+}
+
+/*lista de noticias*/
+
+#lista-noticias li{
+  padding: 2px;
+  border-bottom: 1px solid #ccc;
+  height: 65px;
+}
+
+#lista-noticias li a img{
+  float: left;
+  margin: 5px;
+}
+
+#lista-noticias li a {
+  text-decoration: none;
+ 
+}
+
+#lista-noticias li a h3{
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+  font-size: 0.7em;
+}
+
+#lista-noticias li:hover{
+  background: #eee;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--blue);
+  padding: 20px;
+}
+
+#rodape{
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+/*Colocar responsividade*/
+
+
